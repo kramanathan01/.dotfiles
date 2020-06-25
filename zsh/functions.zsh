@@ -20,7 +20,7 @@ safesleep() { sudo pmset -a hibernatemode 3 ; }    # safesleep:    Set safe slee
 smartsleep() { sudo pmset -a hibernatemode 2 ; }   # smartsleep:   Set smart sleep mode
 
 ### Functions (network) ###
-myip() { curl ip.appspot.com ; }                   # myip:         Public facing IP Address
+myip() { curl ifconfig.me ; echo ; }
 netCons() { lsof -i ; }                            # netCons:      Show all open TCP/IP sockets
 flushDNS() { dscacheutil -flushcache ; }           # flushDNS:     Flush out the DNS Cache
 lsock() { sudo /usr/sbin/lsof -i -P ; }            # lsock:        Display open sockets
