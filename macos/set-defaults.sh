@@ -306,7 +306,7 @@ echo ""
 echo "› Kill related apps"
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
 	"Dock" "Finder" "Mail" "Messages" "Safari" "SystemUIServer" \
-	"Terminal" "Transmission" "Photos"; do
+	"Terminal" "Photos"; do
 	killall "$app" >/dev/null 2>&1
 done
 set -e
