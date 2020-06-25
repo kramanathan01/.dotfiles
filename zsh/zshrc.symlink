@@ -16,6 +16,9 @@ export PROJECTS="$HOME/Code"
 export EDITOR='code'
 export VEDITOR='code'
 
+# For GPG signatures
+export GPG_TTY=$(tty)
+
 # all of our zsh files
 typeset -U config_files
 config_files=($DOTFILES/*/*.zsh)
