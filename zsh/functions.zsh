@@ -42,6 +42,7 @@ ipLocal() {
     esac
   done
 }
+killmap() { kill $(lsof -nP -iTCP:8080 | grep LISTEN | awk '{print $2}'); echo "Killed" }
 
 ### Functions (system) ###
 findPid() { lsof -t -c "$@" ; }
