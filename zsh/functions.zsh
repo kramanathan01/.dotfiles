@@ -42,7 +42,63 @@ ipLocal() {
     esac
   done
 }
-killmap() { kill $(lsof -nP -iTCP:8080 | grep LISTEN | awk '{print $2}'); echo "Killed" }
+
+map() {
+  test $# -eq 0 && {
+    map ls
+    return 0
+  }
+    while test $# -gt 0; do
+    case "$1" in
+      ls)
+        echo $(launchctl kickstart -p gui/$UID/local.map)
+        return 0
+        ;;
+	  print)
+        launchctl print gui/$UID/local.map
+        return 0
+        ;;
+      start)
+        launchctl load -w ~/Library/LaunchAgents/local.map.plist
+        return 0
+        ;;
+	  restart)
+        echo $(launchctl kickstart -k gui/$UID/local.map)
+        return 0
+        ;;
+      kill)
+        launchctl unload -w ~/Library/LaunchAgents/local.map.plist
+		echo "Killed"
+        return 0
+        ;;
+      --help|-h)
+        __map_usage
+        return 0
+        ;;
+      *)
+        __map_usage
+        return 1
+        ;;
+      esac
+    done
+}
+
+__map_usage() {
+  cat <<EOF
+NAME:
+  map - a local URL Shortener
+USAGE:
+  map [global options] command [command options] [arguments...]
+COMMANDS:
+  ls                list PID of map background process
+  print				print full details of the process
+  start             start map background process
+  restart           restart map process
+  kill 		       	shutdown map
+GLOBAL OPTIONS:
+  --help,-h         show help
+EOF
+}
 
 ### Functions (system) ###
 findPid() { lsof -t -c "$@" ; }
