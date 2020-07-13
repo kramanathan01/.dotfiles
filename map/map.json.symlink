@@ -5,5 +5,45 @@
   {
     "path": "/cc",
     "url": "https://calcentral.berkeley.edu"
+  },
+  {
+    "path": "concur",
+    "url": "https://concur.sso.intuit.com/"
+  },
+  {
+    "path": "workday",
+    "url": "https://www.myworkday.com/intuit/login.flex"
+  },
+  {
+    "path": "paycheck",
+    "url": "https://authenticate.intuit.com/AuthenticationService/?partner=ADP"
+  },
+  {
+    "path": "snow",
+    "url": "https://intuit.service-now.com/"
+  },
+  {
+    "path": "goal",
+    "url": "https://betterworks.sso.intuit.com/"
+  },
+  {
+    "path": "401k",
+    "url": "  https://intuit401k.sso.intuit.com/"
+  },
+  {
+    "path": "epp",
+    "url": "https://epp.ie.intuit.com/"
+  },
+  {
+    "path": "box",
+    "url": "https://intuit.app.box.com/"
+  },
+  {
+    "path": "spotlight",
+    "url": "https://authenticate.intuit.com/AuthenticationService/?partner=GLOBOFORCE"
+  },
+  {
+    "path": "ern",
+    "url": "https://earlyretirementnow.com/"
   }
 ]
