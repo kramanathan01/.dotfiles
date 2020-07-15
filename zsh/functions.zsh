@@ -66,9 +66,9 @@ map() {
         echo $(launchctl kickstart -k gui/$UID/local.map)
         return 0
         ;;
-      kill)
+      stop)
         launchctl unload -w ~/Library/LaunchAgents/local.map.plist
-		echo "Killed"
+		echo "Stopped"
         return 0
         ;;
       --help|-h)
@@ -94,7 +94,7 @@ COMMANDS:
   print				print full details of the process
   start             start map background process
   restart           restart map process
-  kill 		       	shutdown map
+  stop 		       	shutdown map
 GLOBAL OPTIONS:
   --help,-h         show help
 EOF

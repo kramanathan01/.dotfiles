@@ -1,5 +1,5 @@
 {
-  "nyt": "https: //www.nytimes.com",
+  "nyt": "https://www.nytimes.com",
   "cc": "https://calcentral.berkeley.edu",
   "concur": "https://concur.sso.intuit.com/",
   "workday": "https://www.myworkday.com/intuit/login.flex",
@@ -10,5 +10,6 @@
   "epp": "https://epp.ie.intuit.com/",
   "box": "https://intuit.app.box.com/",
   "spotlight": "https://authenticate.intuit.com/AuthenticationService/?partner=GLOBOFORCE",
-  "ern": "https://earlyretirementnow.com/"
+  "ern": "https://earlyretirementnow.com/",
+  "wp": "https://washingtonpost.com"
 }
