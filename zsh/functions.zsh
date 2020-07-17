@@ -58,6 +58,10 @@ map() {
         launchctl print gui/$UID/local.map
         return 0
         ;;
+	  reload)
+		kill -SIGUSR1 $(launchctl list | grep local.map | awk '{print $1}')
+		return 0
+		;;
       start)
         launchctl load -w ~/Library/LaunchAgents/local.map.plist
         return 0
@@ -92,9 +96,10 @@ USAGE:
 COMMANDS:
   ls                list PID of map background process
   print				print full details of the process
+  reload			reloads the config file
   start             start map background process
-  restart           restart map process
   stop 		       	shutdown map
+  restart           restart map process
 GLOBAL OPTIONS:
   --help,-h         show help
 EOF

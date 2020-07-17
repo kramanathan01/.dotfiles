@@ -11,5 +11,6 @@
   "box": "https://intuit.app.box.com/",
   "spotlight": "https://authenticate.intuit.com/AuthenticationService/?partner=GLOBOFORCE",
   "ern": "https://earlyretirementnow.com/",
-  "wp": "https://washingtonpost.com"
+  "wp": "https://washingtonpost.com",
+  "p": "https://politico.com"
 }
