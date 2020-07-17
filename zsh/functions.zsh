@@ -59,7 +59,7 @@ map() {
         return 0
         ;;
 	  reload)
-		kill -SIGUSR1 $(launchctl list | grep local.map | awk '{print $1}')
+		kill -SIGUSR1 $(map ls)
 		return 0
 		;;
       start)
