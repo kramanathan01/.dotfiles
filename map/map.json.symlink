@@ -12,5 +12,12 @@
   "spotlight": "https://authenticate.intuit.com/AuthenticationService/?partner=GLOBOFORCE",
   "ern": "https://earlyretirementnow.com/",
   "wp": "https://washingtonpost.com",
-  "p": "https://politico.com"
+  "p": "https://politico.com",
+  "toi": "https://timesofindia.indiatimes.com/",
+  "dw": "https://www.donnywals.com/the-blog/",
+  "w3": "https://www.w3schools.com/default.asp",
+  "bash": "https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Here-Documents",
+  "pgo": "https://dave.cheney.net/practical-go/presentations/gophercon-singapore-2019.html",
+  "hgo": "https://dave.cheney.net/high-performance-go-workshop/gophercon-2019.html",
+  "sot": "https://intuitcorp.quickbase.com/db/bqnpjd8r7"
 }
