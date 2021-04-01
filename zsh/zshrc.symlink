@@ -55,7 +55,7 @@ unset config_files updated_at
 
 # For GPG signatures
 export GPG_TTY=$(tty)
-
+  
 # use .localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.
 # shellcheck disable=SC1090
