@@ -38,22 +38,18 @@ brew "zsh"
 brew "zsh-syntax-highlighting"
 brew "romkatv/gitstatus/gitstatus"
 cask "aerial"
-cask "dash"
-cask "font-firacode-nerd-font"
-cask "font-firacode-nerd-font-mono"
+cask "font-fira-code-nerd-font"
+cask "font-fira-mono-nerd-font"
 cask "font-hack-nerd-font"
 cask "rectangle"
 cask "visual-studio-code"
 mas "Agenda", id: 1287445660
 mas "Amphetamine", id: 937984704
-mas "Dashlane", id: 552383089
 mas "Honey", id: 1472777122
 mas "Pocket", id: 568494494
-mas "Spark", id: 1176895641
 mas "The Unarchiver", id: 425424353
 mas "Time Out", id: 402592703
 mas "Twitter", id: 409789998
-mas "VisualJSON", id: 488709442
 mas "WhatsApp", id: 1147396723
 mas "Wipr", id: 1320666476
 mas "WireGuard", id: 1451685025
