@@ -8,7 +8,11 @@ export DOTFILES="$HOME/.dotfiles"
 cd "$DOTFILES" || exit 1
 
 # fixes PATH (we could be running from the crontab)
-PATH="$(command -p getconf PATH):/usr/local/bin"
+if [ "$(uname -m)" = "arm64" ]; then
+	PATH="$(command -p getconf PATH):/opt/homebrew/bin"
+else
+	PATH="$(command -p getconf PATH):/usr/local/bin"
+fi
 
 # load custom config if any
 # shellcheck disable=SC1090
