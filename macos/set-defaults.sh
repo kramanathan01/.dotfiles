@@ -189,6 +189,33 @@ defaults write com.apple.dock launchanim -bool false
 
 #############################
 
+echo ""
+echo "› Siri"
+echo "  › Enable Siri"
+defaults write com.apple.assistant.support "Assistant Enabled" -bool true
+
+echo "  › Set Language"
+defaults write com.apple.assistant.backedup "Session Language" -string "en-US"
+
+echo "  › Turn Off Voice Feedback"
+# 2 : On
+# 3 : Off
+defaults write com.apple.assistant.backedup "Use device speaker for TTS" -int 3
+
+echo "  › Enable keyboard shortcut Option + Space"
+# Keybord shortcut
+# 0 : Off
+# 2 : Hold Command Space
+# 3 : Hold Option Space
+# 4 : Press Fn (Function) Space
+# 7 : Customize
+defaults write com.apple.Siri HotkeyTag -int 3
+
+echo "  › Turn Off Siri in menu bar"
+defaults write com.apple.Siri StatusMenuVisible -bool false
+
+#############################
+
 # echo ""
 # echo "› Transmission:"
 # echo "  › Use ~/Downloads/Incomplete to store incomplete downloads"
