@@ -8,7 +8,6 @@ brew "sqlite"
 brew "ack"
 brew "ansible"
 brew "antibody"
-brew "carthage"
 brew "ctags"
 brew "diff-so-fancy"
 brew "exa"
@@ -19,7 +18,6 @@ brew "flake8"
 brew "fzf"
 brew "git"
 brew "gnupg"
-brew "go"
 brew "hub"
 brew "jq"
 brew "mas"
@@ -44,14 +42,3 @@ cask "font-fira-mono-nerd-font"
 cask "font-hack-nerd-font"
 cask "rectangle"
 cask "visual-studio-code"
-mas "Agenda", id: 1287445660
-mas "Amphetamine", id: 937984704
-mas "Honey", id: 1472777122
-mas "Pocket", id: 568494494
-mas "The Unarchiver", id: 425424353
-mas "Time Out", id: 402592703
-mas "Twitter", id: 409789998
-mas "WhatsApp", id: 1147396723
-mas "Wipr", id: 1320666476
-mas "WireGuard", id: 1451685025
-mas "Xcode", id: 497799835
